@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\UnleashServer.Web\UnleashServer.Web.csproj" />
+    <ProjectReference Include="..\UnleashServer.Storage\UnleashServer.Storage.csproj" />
+    <ProjectReference Include="..\UnleashServer.Json\UnleashServer.Json.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.14" />
+    <PackageReference Include="Skidbladnir.DataProtection.MongoDb" Version="1.7.0" />
+    <PackageReference Include="Skidbladnir.Modules" Version="1.7.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+</Project>
